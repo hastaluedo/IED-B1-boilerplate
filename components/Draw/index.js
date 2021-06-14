@@ -3,7 +3,7 @@ import component from './Draw.html';
 
 function sketch(p) {
   p.setup = () => {
-    p.createCanvas(500, 500);
+    p.createCanvas(800, 500);
     p.background(0, 0, 0);
   };
 
