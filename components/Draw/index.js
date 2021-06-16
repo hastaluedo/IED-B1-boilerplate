@@ -1,4 +1,5 @@
 import p5 from 'p5';
+<<<<<<< HEAD
 import component from './Draw.html';’
 
 const data = [
@@ -56,6 +57,20 @@ function setup() {
 function draw() {
   background(125);
   drawGraph();
+=======
+import component from './Draw.html';
+
+function sketch(p) {
+  p.setup = () => {
+    p.createCanvas(500, 500);
+    p.background(0, 0, 0);
+  };
+
+  p.draw = () => {
+    p.fill(255);
+    p.rect(30, 30, 30, 140);
+  };
+>>>>>>> parent of 29ecc82 (frame 1 test)
 }
 
 new p5(sketch, component);
