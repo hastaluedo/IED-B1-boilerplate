@@ -1,5 +1,5 @@
 import p5 from 'p5';
-import component from './Draw.html';
+import component from './Draw.html';’
 
 const data = [
   { id: 1, value: 60 },
@@ -59,5 +59,6 @@ function draw() {
 }
 
 new p5(sketch, component);
+
 
 export default component;
