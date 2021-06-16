@@ -1,6 +1,5 @@
 import p5 from 'p5';
 import component from './Draw.html';
-import "./draw.css;"
 
 const data = [
   { id: 1, value: 60 },
@@ -8,7 +7,7 @@ const data = [
   { id: 1, value: 46 },
   { id: 1, value: 23 },
   { id: 1, value: 93 },
-  { id: 1, value: 34 }
+  { id: 1, value: 28 }
 ];
 
 const step = 20;
@@ -32,10 +31,10 @@ function createDivs() {
     divelems[i] = createDiv();
     divelems[i].position(x, 0);
     divelems[i].parent('grafo-uno')
-    divelems[i].size(step, 400);
-    divelems[i].style("border: 2px dashed");
+    divelems[i].size(step, 600);
+    divelems[i].style("border: 2px");
     divelems[i].mouseOver(function changeColor() {
-      divelems[i].style("background-color: lightgreen");
+      divelems[i].style("background-color: purple");
     });
     divelems[i].mouseOut(function changeColor() {
       divelems[i].style("background-color: transparent");
@@ -44,11 +43,11 @@ function createDivs() {
 }
 
 function changeColor(i) {
-  divelems[i].style("background-color: lightgreen");
+  divelems[i].style("background-color: purple");
 }
 
 function setup() {
-  const canvas = createCanvas(600, 400);
+  const canvas = createCanvas(1161, 734);
   canvas.parent('grafo-uno')
   background(125);
   createDivs();
