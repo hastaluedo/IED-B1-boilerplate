@@ -75,10 +75,15 @@ let divelems = [];
 function sketch(p) {
   p.setup = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
     p.createCanvas(1161, 734);
     p.background(251, 243, 234);
     canvas.parent('grafo-uno')
     p.createDivs();
+=======
+    p.createCanvas(500, 500);
+    p.background(0, 0, 0);
+>>>>>>> parent of 4e7f248 (abemus sfondo)
 =======
     p.createCanvas(500, 500);
     p.background(0, 0, 0);
@@ -89,6 +94,7 @@ function sketch(p) {
     background(125);
     drawGraph();
   };
+<<<<<<< HEAD
 
   drawGraph() {
     noFill();
@@ -124,6 +130,8 @@ function sketch(p) {
     divelems[i].style("background-color: lightgreen");
   ;
 =======
+=======
+>>>>>>> parent of 4e7f248 (abemus sfondo)
 >>>>>>> parent of 29ecc82 (frame 1 test)
 }
 >>>>>>> parent of 4e7f248 (abemus sfondo)
